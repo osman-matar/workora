@@ -1,11 +1,11 @@
+// import { Button } from "./components/ui/button";
+import About from "./About";
 import { Button } from "./components/ui/button";
-import Navbar from "./components/ui/Navbar";
 import Swiper from "./components/ui/Swiper";
 
 const App = () => {
   return (
-    <div className=' w-full flex items-center flex-col '>
-      <Navbar />
+    <div className=' w-full flex items-center flex-col  ' id='about'>
       <h1 className='text-8xl hidden  lg:mb-10 md:text-[150px] lg:text-[210px] xl:text-[225px]  mx-auto font-extrabold md:font-bold lg:font-bold   text-[#7c4dff] tracking-widest lg:-mt-4    '>
         Workora
       </h1>
@@ -30,6 +30,7 @@ const App = () => {
         </Button>
       </div>
       <Swiper />
+      <About />
     </div>
   );
 };
