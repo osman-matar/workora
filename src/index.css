@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sora:wght@100..800&display=swap");
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -132,7 +134,17 @@
   .text-dark-violate {
     color: #44169c;
   }
+  .font-primary {
+    font-family: "Sora", sans-serif;
+  }
+  .font-secondary {
+    font-family: "Open Sans", sans-serif;
+  }
 }
+
+/* ##### Font Type Based On the Headding Or Body Type ##### */
+
+/* ########### */
 .slider-track {
   display: flex;
   width: max-content;
@@ -155,6 +167,21 @@
   }
 }
 
-link:hover {
-  border-bottom: 2px solid #44169c;
+.nav-link {
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Sora", sans-serif;
+  color: #6d6d72;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #7c4dff;
+}
+
+.nav-link.active {
+  padding-bottom: 22px;
+  border-bottom: 2px solid #7c4dff;
+  color: #7c4dff;
 }

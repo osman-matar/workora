@@ -1,36 +1,18 @@
 // import { Button } from "./components/ui/button";
+import Home from "./Home";
 import About from "./About";
-import { Button } from "./components/ui/button";
+import Booking from "./components/Booking";
+import Perks from "./components/Perks";
 import Swiper from "./components/ui/Swiper";
 
 const App = () => {
   return (
-    <div className=' w-full flex items-center flex-col  ' id='about'>
-      <h1 className='text-8xl hidden  lg:mb-10 md:text-[150px] lg:text-[210px] xl:text-[225px]  mx-auto font-extrabold md:font-bold lg:font-bold   text-[#7c4dff] tracking-widest lg:-mt-4    '>
-        Workora
-      </h1>
-      <h1 className=' text-violet-800  font-bold text-7xl sm:text-8xl  font-serif -mb-4 mt-2'>
-        DESKORA
-      </h1>
-      <div className='content text-center flex flex-col items-center   mx-auto my-10 '>
-        <h1 className='text-[#2a2734] font-bold text-3xl  md:text-5xl  lg:text-6xl xl:text-7xl lg:-mt-4     '>
-          WORK YOUR WAY AT WORKORA
-        </h1>
-        <p className='text-[#2a2734] text-xl md:text-3xl   max-w-4xl mt-4 lg:mt-4  px-1  opacity-80 md:tracking-wider '>
-          Flexible workspaces for freelancers, teams, and businesses designed
-          for productivity, comfort, and community.
-        </p>
-      </div>
-      <div className='flex gap-2  px-2  mx-auto md:max-w-xl lg:px-0  '>
-        <Button className='  bg-dark-violate border-dark-violate border-2  text-xl md:text-2xl flex-1  text-white  font-semibold py-5 md:px-2 md:py-6 mx-1 '>
-          Explore Spaces
-        </Button>
-        <Button className='bg-transparent  border-violet-600 border-2 text-xl md:text-2xl flex-1  text-violet-800 font-semibold py-5 md:px-2 md:py-6 mx-1   '>
-          Book a Tour
-        </Button>
-      </div>
+    <div className=' w-full flex items-center flex-col '>
+      <Home />
       <Swiper />
       <About />
+      <Perks />
+      <Booking />
     </div>
   );
 };

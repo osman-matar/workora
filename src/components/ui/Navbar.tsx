@@ -1,27 +1,58 @@
 import { Button } from "./button";
 import { Menu } from "lucide-react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div className='min-w-screen bg-gray-100'>
-      <nav className=' max-w-[1400px] mx-auto  flex items-center justify-between  px-6 md:px-2   py-6  bg-transparent '>
+      <nav className=' max-w-350  mx-auto  flex items-center justify-between  px-6 md:px-2   py-5 bg-transparent '>
         <h1 className=' text-3xl font-bold  text-violet-700'>Workora</h1>
         <ul className=' md:flex gap-8  text-xl font-medium text-gray-700 hidden '>
           <li className='text-md text-gray-600 hover:text-dark-violate cursor-pointer hover:text-violet-700 '>
-            <Link to='/'>Home</Link>
+            <NavLink
+              to='/'
+              className={({ isActive }) =>
+                `nav-link ${isActive ? "active" : ""}`
+              }>
+              Home
+            </NavLink>
           </li>
           <li className='text-md text-gray-600 hover:text-dark-violate cursor-pointer hover:text-violet-700 '>
-            <Link to='/about'>About</Link>
+            <NavLink
+              to='/workspaces'
+              className={({ isActive }) =>
+                `nav-link ${isActive ? "active" : ""}`
+              }>
+              Workspaces
+            </NavLink>
           </li>
           <li className='text-md text-gray-600 hover:text-dark-violate cursor-pointer hover:text-violet-700 '>
-            <Link to='/spaces'>Spaces</Link>
+            <NavLink
+              to='/membership'
+              className={({ isActive }) =>
+                isActive ? "nav-link active" : "nav-link"
+              }>
+              Membership
+            </NavLink>
           </li>
           <li className='text-md text-gray-600 hover:text-dark-violate cursor-pointer hover:text-violet-700 '>
-            <Link to='/blog'>Blog</Link>
+            <NavLink
+              to='/blog'
+              className={({ isActive }) =>
+                `nav-link ${isActive ? "active" : ""}`
+              }>
+              Blog
+            </NavLink>
           </li>
           <li className='text-md text-gray-600 hover:text-dark-violate cursor-pointer hover:text-violet-700 '>
-            <Link to='/contact'>Contact</Link>
+            <NavLink
+              to='/favorites'
+              className={({ isActive }) =>
+                `nav-link ${isActive ? "active" : ""}`
+              }>
+              Favorite
+            </NavLink>
           </li>
         </ul>
         <div className='md:flex gap-2 hidden '>
