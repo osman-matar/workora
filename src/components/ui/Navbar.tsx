@@ -1,4 +1,3 @@
-import { Button } from "./button";
 import { Menu } from "lucide-react";
 // import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
@@ -56,12 +55,7 @@ const Navbar = () => {
           </li>
         </ul>
         <div className='md:flex gap-2 hidden '>
-          <Button className='bg-transparent  border-violet-600 border-2 text-sm text-violet-800 font-semibold    '>
-            Contact Us
-          </Button>
-          <Button className='  bg-dark-violate border-dark-violate border-2s text-sm text-white  font-semibold  '>
-            Login
-          </Button>
+          <button>btn</button>
         </div>
         <div className='border p-1  border-gray-400 rounded md:hidden '>
           <Menu className='text-gray-700' />

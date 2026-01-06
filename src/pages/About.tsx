@@ -1,5 +1,5 @@
-import sectionImage from "./assets/images/sectoin_2.jpg";
-import Card from "./components/Card";
+import sectionImage from "../assets/images/sectoin_2.jpg";
+import Card from "../components/Card";
 import { Wifi } from "lucide-react";
 import { Armchair } from "lucide-react";
 // import { Microphone } from "lucide-react";
@@ -10,7 +10,7 @@ const About = () => {
   return (
     <div className=' py-8 md:py-20 px-4  bg-[#7c4dff] w-full '>
       <div className='max-w-345    flex-col mx-auto'>
-        <div className='top flex-col  md:flex-row  gap-2  text-white '>
+        <div className=' flex flex-col md:flex-row gap-2  text-white '>
           <div className='flex-6 '>
             <h1 className=' text-[#fff7d1] font-bold mb-4 text-5xl max-w-xl  '>
               MORE THAN JUST A DESK
@@ -34,7 +34,7 @@ const About = () => {
             />
           </div>
           <div className='flex flex-col gap-4 '>
-            <div className='flex gap-4 flex-col md:flex-row w-full '>
+            <div className='flex gap-4 flex-col sm:flex-row  md:flex-row lg:flex-row w-full '>
               <Card
                 iconSrc={
                   <Armchair
@@ -56,7 +56,7 @@ const About = () => {
                 content='Enjoy high-speed Wi-Fi, premium coffee, lockers, printers, lounges, and everything else to stay productive and relaxed.'
               />
             </div>
-            <div className='flex gap-4 flex-col md:flex-row w-full '>
+            <div className='flex gap-4 flex-col sm:flex-row md:flex-row lg:flex-row w-full '>
               <Card
                 iconSrc={
                   <UsersRound

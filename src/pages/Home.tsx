@@ -1,5 +1,3 @@
-import { Button } from "./components/ui/button";
-
 const Home = () => {
   return (
     <div>
@@ -19,14 +17,7 @@ const Home = () => {
             for productivity, comfort, and community.
           </p>
         </div>
-        <div className='flex gap-2  px-2  mx-auto md:max-w-xl lg:px-0  '>
-          <Button className='  bg-dark-violate border-dark-violate border-2  text-xl md:text-2xl flex-1  text-white  font-semibold py-5 md:px-2 md:py-6 mx-1 '>
-            Explore Spaces
-          </Button>
-          <Button className='bg-transparent  border-violet-600 border-2 text-xl md:text-2xl flex-1  text-violet-800 font-semibold py-5 md:px-2 md:py-6 mx-1   '>
-            Book a Tour
-          </Button>
-        </div>
+        <div className='flex gap-2  px-2  mx-auto md:max-w-xl lg:px-0  '></div>
       </div>
     </div>
   );

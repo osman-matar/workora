@@ -1,19 +1,21 @@
 // import { Button } from "./components/ui/button";
-import Home from "./Home";
-import About from "./About";
+import Home from "./pages/Home";
+import About from "./pages/About";
 import Booking from "./components/Booking";
 import Perks from "./components/Perks";
 import Swiper from "./components/ui/Swiper";
+import Footer from "./components/ui/Footer";
 
 const App = () => {
   return (
-    <div className=' w-full flex items-center flex-col '>
+    <>
       <Home />
       <Swiper />
       <About />
       <Perks />
       <Booking />
-    </div>
+      <Footer />
+    </>
   );
 };
 
