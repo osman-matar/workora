@@ -1,9 +1,10 @@
 // import { Button } from "./components/ui/button";
 import Home from "./pages/Home";
-import About from "./pages/About";
-import Booking from "./components/Booking";
-import Perks from "./components/Perks";
 import Swiper from "./components/ui/Swiper";
+import About from "./pages/About";
+import Perks from "./components/Perks";
+import Blog from "./components/Blog";
+import Booking from "./components/Booking";
 import Footer from "./components/ui/Footer";
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
       <Swiper />
       <About />
       <Perks />
+      <Blog />
       <Booking />
       <Footer />
     </>

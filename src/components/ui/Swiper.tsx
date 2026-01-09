@@ -9,7 +9,7 @@ import Image8 from "../../assets/images/banner_8.jpg";
 
 const Swiper = () => {
   return (
-    <div className='slider  max-w-[1380px] w-full my-10 mx-auto overflow-hidden '>
+    <div className='slider  max-w-7xl w-full my-10 mx-auto overflow-hidden '>
       <div className='slider-track flex '>
         {/* group one */}
         <img src={Image1} />
@@ -27,13 +27,3 @@ const Swiper = () => {
 };
 
 export default Swiper;
-
-// import React from 'react'
-
-// const Swiper = () => {
-//   return (
-//     <div>Swiper</div>
-//   )
-// }
-
-// export default Swiper

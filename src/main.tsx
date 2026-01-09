@@ -8,6 +8,8 @@ import ErrorPage from "./pages/error/index";
 import Navbar from "./components/ui/Navbar";
 import About from "./pages/About";
 import Workspaces from "./pages/Workspaces";
+import SingleBlog from "./pages/SingleBlog";
+import BlogsPage from "./pages/BlogsPage";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -17,6 +19,8 @@ createRoot(document.getElementById("root")!).render(
         <Route path='/' element={<App />} />
         <Route path='/about' element={<About />} />
         <Route path='/workspaces' element={<Workspaces />} />
+        <Route path='/blog' element={<BlogsPage />} />
+        <Route path='/blog/:id' element={<SingleBlog />} />
         <Route path='*' element={<ErrorPage />} />
       </Routes>
     </BrowserRouter>

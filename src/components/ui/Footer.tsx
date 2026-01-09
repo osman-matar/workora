@@ -12,7 +12,7 @@ import FooterLink from "./FooterLink";
 const Footer = () => {
   return (
     <div className=' py-20 w-full justify-center bg-[#2A2734]'>
-      <div className='flex flex-col max-w-345 px-4   mx-auto'>
+      <div className='flex flex-col max-w-7xl  px-4   mx-auto'>
         {/* top foooter  */}
         <div className='mb-8 flex flex-col'>
           <h1 className='text-primary text-5xl font-primary font-bold '>

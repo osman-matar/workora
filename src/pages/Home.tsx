@@ -1,7 +1,7 @@
 const Home = () => {
   return (
     <div>
-      <div className='max-w-345 flex-col text-center'>
+      <div className='max-w-345 flex-col text-center mx-auto '>
         <h1 className='text-8xl hidden  lg:mb-10 md:text-[150px] lg:text-[210px] xl:text-[225px]  mx-auto font-extrabold md:font-bold lg:font-bold   text-[#7c4dff] tracking-widest lg:-mt-4    '>
           Workora
         </h1>

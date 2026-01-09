@@ -9,7 +9,7 @@ import { UsersRound } from "lucide-react";
 const About = () => {
   return (
     <div className=' py-8 md:py-20 px-4  bg-[#7c4dff] w-full '>
-      <div className='max-w-345    flex-col mx-auto'>
+      <div className='max-w-7xl     flex-col mx-auto'>
         <div className=' flex flex-col md:flex-row gap-2  text-white '>
           <div className='flex-6 '>
             <h1 className=' text-[#fff7d1] font-bold mb-4 text-5xl max-w-xl  '>

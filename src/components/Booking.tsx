@@ -1,7 +1,7 @@
 const Booking = () => {
   return (
     <div className=' py-20   w-full  bg-[linear-gradient(135deg,#7C4DFF,#7C4DFF,#FFF7D1)] justify-center'>
-      <div className='flex  flex-col  md:flex-row justify-center    md:justify-between max-w-345 px-4   mx-auto  '>
+      <div className='flex  flex-col  md:flex-row justify-center    md:justify-between max-w-7xl  px-4   mx-auto  '>
         <div className='flex flex-col gap-5 w-full md:max-w-1/2 text-white  '>
           <h3 className='text-3xl font-bold'>Ready to Elevate Your Workday?</h3>
           <p className='text-[20px]leading-8 s font-thin tracking-widest    '>

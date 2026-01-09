@@ -1,6 +1,4 @@
-const workspacesLinks = document.querySelectorAll(".workspacesLink");
-
-console.log(Array(workspacesLinks));
+// const workspacesLinks = document.querySelectorAll(".workspacesLink");
 
 import Footer from "@/components/ui/Footer";
 
